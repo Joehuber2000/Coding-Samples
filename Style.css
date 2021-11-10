@@ -1,0 +1,136 @@
+/* Navbar Code  */
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: lightskyblue;
+    color: black;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Element Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-top: 6vh;
+    text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    padding-top: 1.5vh;
+}
+
+footer {
+    position: sticky;
+    margin-bottom: -20px;
+}
+
+   /* ID Styles */
+
+#SP {
+    width: 15vw;
+    margin-top: 10px;
+    display: inline;
+    border-radius: 5%;
+    box-shadow: 1vw 1vw 5px lightskyblue ;
+}
+
+#comp {
+    width: 90%;
+    margin-left: 3vw;
+    border-radius: 5%;
+    box-shadow: 1vw 1vw 5px lightskyblue ;
+    
+}
+
+#bio {
+    position: absolute;
+    display: inline;
+    font-size: 3vw;
+    padding-left: 2vw;
+}
+
+#footer {
+    background-color: gray;
+    width: 100%;
+}
+
+    /* Class Styles */
+
+.para {
+    padding-top: 1.5vh;;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1200px) {
+  #bio {
+    font-size: 1.5vw;
+  }
+
+  #SP {
+    width: 5vw;
+  }
+}
